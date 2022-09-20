@@ -23,8 +23,16 @@ btnBuscar.addEventListener(`click`,()=>{
     
 })
 
+
+
 const btnEliminar=document.getElementById(`btnEliminar`);
 btnEliminar.addEventListener(`click`,()=>{
     let producto=document.getElementById(`txtProdEliminar`);
     miInventario.eliminar(producto);
+})
+
+
+const btnListar=document.getElementById(`btnListar`);
+btnListar.addEventListener(`click`,()=>{
+    miInventario.listar();
 })
